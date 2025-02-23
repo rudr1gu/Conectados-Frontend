@@ -1,57 +1,24 @@
-<div class="max-w-md mx-auto bg-white shadow-lg rounded-lg p-6">
-    <h2 class="text-2xl font-bold mb-6 text-center">Cadastro de Usuário</h2>
+<section class="form-container">
+    <h2 class="form-title">Cadastro de Usuário</h2>
     <form>
         <div class="mb-4">
-            <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
-                Usuário
-            </label>
-            <input
-                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="username"
-                type="text"
-                placeholder="Usuário"
-            />
+            <label class="form-label" for="username">Usuário</label>
+            <input class="form-input" id="username" type="text" placeholder="Usuário" />
         </div>
         <div class="mb-4">
-            <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
-                Email
-            </label>
-            <input
-                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="email"
-                type="email"
-                placeholder="Email"
-            />
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" id="email" type="email" placeholder="Email" />
         </div>
         <div class="mb-4">
-            <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
-                Senha
-            </label>
-            <input
-                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="password"
-                type="password"
-                placeholder="Senha"
-            />
+            <label class="form-label" for="password">Senha</label>
+            <input class="form-input" id="password" type="password" placeholder="Senha" />
         </div>
         <div class="mb-4">
-            <label class="block text-gray-700 text-sm font-bold mb-2" for="photo">
-                Foto
-            </label>
-            <input
-                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="photo"
-                type="file"
-                accept="image/*"
-            />
+            <label class="form-label" for="photo">Foto</label>
+            <input class="form-input" id="photo" type="file" accept="image/*" />
         </div>
         <div class="flex items-center justify-between">
-            <button
-                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                type="button"
-            >
-                Cadastrar
-            </button>
+            <button class="form-button" type="button">Cadastrar</button>
         </div>
     </form>
-</div>
+</section>
