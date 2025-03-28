@@ -1,10 +1,9 @@
-<h1 class="text-center mt-5">
-  Welcome to {{ title }}!
-</h1>
-
-<p class="flex flex-row justify-center mt-5 gap-4">
-  <a routerLink="/home">Home</a>
-  <a routerLink="/about">About</a>
-</p>
-
+<header class="fixed-top mb-5">
+  <app-navbar></app-navbar>
+</header>
 <router-outlet />
+<footer class="fixed-bottom">
+  <app-footer></app-footer>
+</footer>
+
+
