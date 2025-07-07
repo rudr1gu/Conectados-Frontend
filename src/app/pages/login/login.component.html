@@ -1,22 +1,84 @@
-<section>
-    <div class="form-container">
-        <h2 class="form-title">Login</h2>
-        <form>
-            <div class="mb-4">
-                <label class="form-label
-                " for="username">Usuário</label>
-                <input class="form-input
-                " id="username" type="text" placeholder="Usuário" />
-            </div>
-            <div class="mb-4">
-                <label class="form-label
-                " for="password">Senha</label>
-                <input class="form-input
-                " id="password" type="password" placeholder="Senha" />
-            </div>
-            <div class="flex items-center justify-between">
-                <button class="form-button" type="button">Entrar</button>
-            </div>
-        </form>
+<section class="login-container">
+  <header class="login-header">
+    <div class="login-icon-wrapper">
+      <div class="login-icon-bg">
+        <lucide-icon [img]="User" class="icon-white"></lucide-icon>
+      </div>
     </div>
+    <h1 class="login-title">Bem-vindo de volta!</h1>
+    <p class="login-subtitle">Entre na sua conta para continuar seus estudos</p>
+  </header>
+
+  <main>
+    <form (submit)="handleSubmit($event)" class="form-space">
+      <article class="form-group">
+        <label for="email" class="form-label">Email</label>
+        <div class="input-wrapper">
+          <lucide-icon [img]="Mail" class="icon-input"></lucide-icon>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            [(ngModel)]="email"
+            placeholder="seu@email.com"
+            required
+            class="input-field"
+          />
+        </div>
+      </article>
+
+      <article class="form-group">
+        <label for="password" class="form-label">Senha</label>
+        <div class="input-wrapper">
+          <lucide-icon [img]="Lock" class="icon-input"></lucide-icon>
+          <input
+            [type]="showPassword ? 'text' : 'password'"
+            id="password"
+            name="password"
+            [(ngModel)]="password"
+            placeholder="••••••••"
+            required
+            class="input-field pr-12"
+          />
+          <button
+            type="button"
+            (click)="togglePasswordVisibility()"
+            class="icon-toggle"
+            aria-label="Mostrar ou ocultar senha"
+          >
+            <lucide-icon [img]="showPassword ? EyeOff : Eye" class="w-5 h-5"></lucide-icon>
+          </button>
+        </div>
+      </article>
+
+      <div class="form-options">
+        <label class="form-remember">
+          <input
+            id="remember"
+            name="remember"
+            type="checkbox"
+            [(ngModel)]="rememberMe"
+            class="checkbox"
+          />
+          Lembrar de mim
+        </label>
+        <a href="#" class="form-link">Esqueci minha senha</a>
+      </div>
+
+      <button
+        type="submit"
+        [disabled]="isLoading"
+        class="btn-submit"
+      >
+        @if (isLoading) {
+          <div class="btn-loading">
+            <div class="spinner"></div>
+            <span class="ml-2">Entrando...</span>
+          </div>
+        } @else {
+          Entrar
+        }
+      </button>
+    </form>
+  </main>
 </section>
