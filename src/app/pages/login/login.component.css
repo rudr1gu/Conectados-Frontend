@@ -1,0 +1,83 @@
+.login-container {
+  @apply w-full max-w-md mx-auto;
+}
+
+.login-header {
+  @apply text-center mb-8;
+}
+
+.login-icon-wrapper {
+  @apply flex justify-center mb-4;
+}
+
+.login-icon-bg {
+  @apply bg-gradient-to-r from-blue-600 to-purple-600 p-3 rounded-full;
+}
+
+.icon-white {
+  @apply w-8 h-8 text-white;
+}
+
+.login-title {
+  @apply text-3xl font-bold text-gray-800 mb-2;
+}
+
+.login-subtitle {
+  @apply text-gray-600;
+}
+
+.form-space {
+  @apply space-y-6;
+}
+
+.form-group {
+  @apply flex flex-col gap-2;
+}
+
+.form-label {
+  @apply text-sm font-medium text-gray-700;
+}
+
+.input-wrapper {
+  @apply relative;
+}
+
+.icon-input {
+  @apply absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5;
+}
+
+.input-field {
+  @apply w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors;
+}
+
+.icon-toggle {
+  @apply absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors;
+}
+
+.form-options {
+  @apply flex items-center justify-between;
+}
+
+.form-remember {
+  @apply flex items-center text-sm text-gray-700 gap-2;
+}
+
+.checkbox {
+  @apply h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded;
+}
+
+.form-link {
+  @apply text-sm text-blue-600 hover:text-blue-800 transition-colors;
+}
+
+.btn-submit {
+  @apply w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 px-4 rounded-lg font-medium hover:from-blue-700 hover:to-purple-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-loading {
+  @apply flex items-center justify-center;
+}
+
+.spinner {
+  @apply animate-spin rounded-full h-5 w-5 border-b-2 border-white;
+}
