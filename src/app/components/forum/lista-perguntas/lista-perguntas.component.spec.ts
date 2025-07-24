@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LitaPerguntasComponent } from './lita-perguntas.component';
+import { ListaPerguntasComponent } from './lista-perguntas.component';
 
-describe('LitaPerguntasComponent', () => {
-  let component: LitaPerguntasComponent;
-  let fixture: ComponentFixture<LitaPerguntasComponent>;
+describe('ListaPerguntasComponent', () => {
+  let component: ListaPerguntasComponent;
+  let fixture: ComponentFixture<ListaPerguntasComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LitaPerguntasComponent]
+      imports: [ListaPerguntasComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(LitaPerguntasComponent);
+    fixture = TestBed.createComponent(ListaPerguntasComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
