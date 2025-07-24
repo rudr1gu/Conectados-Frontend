@@ -6,14 +6,13 @@ import { LucideAngularModule, Eye, EyeOff, Mail, Lock, User } from 'lucide-angul
   selector: 'app-login',
   standalone: true,
   imports: [
-    FormsModule, // Required for [(ngModel)]
+    FormsModule,
     LucideAngularModule
   ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-  // Register the icons for use in the template
   readonly Eye = Eye;
   readonly EyeOff = EyeOff;
   readonly Mail = Mail;
